@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>bono navideño</h1>
+    <input id="num1" type="text"placeholder="ingrese su antiguedad:">
+    <input id="num2" type="text" placeholder="ingrese su saldo:">
+    <button onclick="bono()">calcular</button>
+    <script>
+        function bono(){
+            var antiguedad = parseInt(document.querySelector('#num1').value);
+        var sueldo = parseInt(document.querySelector('#num2').value);
+        var bonos=0;
+        if(antiguedad>4||sueldo<2000)
+        {
+            bonos=sueldo*0.25;
+
+        }
+        else
+        {
+            bonos=sueldo*0.20;
+        }
+        document.write("el bono que resivira es:"+bonos+"<br>")
+        }
+        
+    </script>
+</body>
+</html>

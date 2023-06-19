@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>factorial</h1>
+    <input id="numero1" type="text" placeholder="ingrese numero:">
+    <button onclick="factorial()">calcular</button>
+    <h1 id="res"></h1>
+    <script>
+        function factorial(){
+            var numero1=parseInt(document.querySelector('#numero1').value);
+            var fac=1;
+            var total=0;
+            for(var i=1;i<=numero1;i++){
+                fac*=i;
+            }
+            document.write('factorial es'+fac+"<br>")
+        }
+    </script>
+</body>
+</html>
